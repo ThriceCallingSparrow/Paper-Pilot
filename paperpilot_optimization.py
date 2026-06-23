@@ -55,6 +55,7 @@ def objective(trial):
         "enddragY": trial.suggest_int("enddragY", END_DRAG_Y_MIN, END_DRAG_Y_MAX)   # 鼠标释放Y坐标
     }
     '''
+    这个是用于指定参数进行模拟的示例
     params = {
         "task_id": task_counter, # 48.2
         "selectedPlane": 1,
@@ -84,7 +85,6 @@ def objective(trial):
                 "weight": params["weight"],
                 "element": params["element"],
                 "winglets": params["winglets"],
-                "startdragX": params["startdragX"],
                 "enddragX": params["enddragX"],
                 "enddragY": params["enddragY"],
                 "throw_power": 0,
@@ -106,7 +106,6 @@ def objective(trial):
             "weight": params["weight"],
             "element": params["element"],
             "winglets": params["winglets"],
-            "startdragX": params["startdragX"],
             "enddragX": params["enddragX"],
             "enddragY": params["enddragY"],
             "throw_power": 0,
@@ -123,7 +122,6 @@ def objective(trial):
         "weight": params["weight"],
         "element": params["element"],
         "winglets": params["winglets"],
-        "startdragX": params["startdragX"],
         "enddragX": params["enddragX"],
         "enddragY": params["enddragY"],
         "throw_power": result["power"],
